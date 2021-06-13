@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : Bloxit
 {
@@ -54,6 +55,10 @@ public class Player : Bloxit
                 }
             }        
         }
+    }
+    private void OnDestroy()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     IEnumerator ChargeReset()
     {

@@ -5,13 +5,14 @@ using UnityEngine;
 
 public class Charger : Enemy
 {
-    private bool charge = false;
-    private bool recharging = false;
+    private bool charge = true;
+    private bool recharging = true;
     private float chargeSpeed = 50f;
     // Start is called before the first frame update
     public override void Start()
     {
         base.Start();
+        StartCoroutine(ChargeCooldown());
     }
 
     // Update is called once per frame

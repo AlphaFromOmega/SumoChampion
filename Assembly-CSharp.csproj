@@ -58,12 +58,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\EnemyAI\Charger.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyAI\Chaser.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyExhaust.cs" />
     <Compile Include="Assets\Scripts\Bloxit.cs" />
-    <Compile Include="Assets\Scripts\EnemyAI\Charger.cs" />
-    <Compile Include="Assets\Scripts\EnemyAI\Chaser.cs" />
+    <Compile Include="Assets\Scripts\Title Screen\RotateCamera.cs" />
+    <Compile Include="Assets\Scripts\Title Screen\TitleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
